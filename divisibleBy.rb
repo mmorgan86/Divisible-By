@@ -1,4 +1,6 @@
-# . Create a program that takes two numbers from the user, finds out if the first number is divisible by the second. If not divisible, let the user know what the remainder is.
+# . Create a program that takes two numbers from the user,
+# finds out if the first number is divisible by the second.
+# If not divisible, let the user know what the remainder is.
 
 puts "Hi, What is your name?"
 name = gets.chomp.capitalize
@@ -13,8 +15,10 @@ num2 = gets.chomp.to_i
 
 div = num1 % num2
 
-if num1 % num2 == 0
+# you can also use the .zero? to find if something is divisible by zero
+
+if div == 0
   puts "#{num1} is divisible by #{num2} evenly."
 else
-  puts "The remainder of #{num1} being divided by #{num2} is #{div}."
+  puts "#{num1} is not divisible by #{num2}. The remainder is #{div}."
 end
